@@ -17,4 +17,5 @@ python fummy.py fummy -b master -p /path/to/Repo/savannah/emr-backend
 ```
 
 `` -b or --branch states the branches to exclude``
-`` -p or --path states the path to the repo folder`
+`` -p or --path states the path to the repo folder``
+`` -t or --threshold the number of days a branch needs to be unused to be considered stale``
