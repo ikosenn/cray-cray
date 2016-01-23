@@ -10,12 +10,13 @@ use cases.
 Fummy is a script that helps delete branches in git repos. Normally after pushing
 and merging branches to master you leave a lot of unused branches in your repositories.
 
+`` -b or --branch states the branches to exclude
+ -p or --path states the path to the repo folder
+ -t or --threshold the number of days a branch needs to be unused to be considered stale``
+
+
 Example:
 
 ``` python
 python fummy.py fummy -b master -p /path/to/Repo/savannah/emr-backend
 ```
-
-`` -b or --branch states the branches to exclude``
-`` -p or --path states the path to the repo folder``
-`` -t or --threshold the number of days a branch needs to be unused to be considered stale``
