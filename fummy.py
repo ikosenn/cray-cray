@@ -11,10 +11,13 @@
     the main branch
 """
 import os
-import datetime
+
+from datetime import datetime
 
 import click
 from sarge import capture_stdout
+
+import pytz
 
 from dateutil.parser import parse
 
@@ -27,9 +30,9 @@ def get_time_difference(time):
     """
     Computes the difference with todays time
     """
-
+    timezone = "Africa/Nairobi"
     branch_time = parse(time)
-    current_time = datetime.datetime.now(datetime.timezone.utc)
+    current_time = datetime.now(pytz.timezone(timezone))
     diff_days = (current_time - branch_time)
     return diff_days.days
 
@@ -85,8 +88,9 @@ def kill_merged(default):
 @click.group()
 def cli():
     """
-    Development helpers for the EMR project
-    These utilities help with testing, loading of data, database resets etc
+    Command Line Interface tools loader for  ``fummy``
+    These utilities help with deleting git branches older than the specified
+    period
     """
     pass
 

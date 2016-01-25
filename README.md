@@ -17,6 +17,6 @@ and merging branches to master you leave a lot of unused branches in your reposi
 
 Example:
 
-``` python
+``` bash
 python fummy.py fummy -b master -p /path/to/Repo
 ```
