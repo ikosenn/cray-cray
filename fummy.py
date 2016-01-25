@@ -11,10 +11,13 @@
     the main branch
 """
 import os
-import datetime
+
+from datetime import datetime
 
 import click
 from sarge import capture_stdout
+
+import pytz
 
 from dateutil.parser import parse
 
@@ -27,9 +30,9 @@ def get_time_difference(time):
     """
     Computes the difference with todays time
     """
-
+    timezone = "Africa/Nairobi"
     branch_time = parse(time)
-    current_time = datetime.datetime.now(datetime.timezone.utc)
+    current_time = datetime.now(pytz.timezone(timezone))
     diff_days = (current_time - branch_time)
     return diff_days.days
 
