@@ -85,8 +85,9 @@ def kill_merged(default):
 @click.group()
 def cli():
     """
-    Development helpers for the EMR project
-    These utilities help with testing, loading of data, database resets etc
+    Command Line Interface tools loader for  ``fummy``
+    These utilities help with deleting git branches older than the specified
+    period
     """
     pass
 
