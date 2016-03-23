@@ -20,3 +20,7 @@ Example:
 ``` bash
 python fummy.py fummy -b master -p /path/to/Repo
 ```
+
+## Tmux start up
+This is a script that I use to start one of my many projects that requires multiple windows and panes
+and different commands ran on each pane. *Enjoy*
