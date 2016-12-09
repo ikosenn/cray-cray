@@ -8,7 +8,7 @@
 
 TERM_APP='/Applications/Terminal.app'
 BREW_EXEC='/usr/local/bin/brew'
-TERMINAL_NOTIFIER='/usr/local/bin/terminal-notifier'
+TERMINAL_NOTIFIER='/usr/local/Cellar/terminal-notifier/1.7.1/bin/terminal-notifier'
 # NOTIF_ARGS="-sender com.apple.Terminal"
 
 $BREW_EXEC update 2>&1 > /dev/null
