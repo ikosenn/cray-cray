@@ -1,0 +1,1 @@
+defaults write com.apple.diskspaced minFreeSpace 10
